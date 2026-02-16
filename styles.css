@@ -1,0 +1,209 @@
+/* HexMilkTea Café — Cozy Horror Tea Shop */
+
+/* Reset default margin and set font + background */
+body 
+{
+  margin: 0;  /* Removes default browser margin */
+  font-family: Georgia, "Times New Roman", serif;  /* Sets elegant serif font */
+  background-color: #07110D;  /* Deep evergreen background */
+  color: #F2F4EF;  /* Light readable text color */
+  line-height: 1.5;  /* Improves text readability */
+}
+
+/* This keeps all content centered and limits width */
+.wrapper 
+{
+  width: 92%;              /* Page width */
+  max-width: 1000px;       /* Prevents it from getting too wide */
+  margin: 0 auto;          /* Centers content horizontally */
+}
+
+/* Top header styling */
+.header-section 
+{
+  padding: 34px 0 20px;          /* Space inside header */
+  text-align: center;            /* Centers header text */
+  border-bottom: 2px solid #88B07B;  /* Green accent line */
+  background-color: #07110D;     /* Matches page background */
+}
+
+/* Main site title */
+.header-section h1 
+{
+  margin: 0;
+  font-size: 2.6em;                 /* Larger heading */
+  text-shadow: 0 0 10px #2AD38E;    /* Soft green glow effect */
+}
+
+/* Subtitle under main heading */
+.header-section p 
+{
+  margin-top: 8px;
+  color: #D4DDCF;      /* Softer green-gray text */
+  font-style: italic;
+}
+
+/* Navigation bar background */
+.navbar 
+{
+  background-color: #0B1A13;      /* Dark pine green */
+  border-bottom: 1px solid #3E6B4E; /* Subtle border line */
+}
+
+/* Removes bullet points and centers nav */
+.navbar ul 
+{
+
+  list-style: none;     /* Removes bullets */
+  margin: 0;
+  padding: 12px 0;
+  text-align: center;
+}
+
+/* Makes nav links horizontal */
+.navbar li 
+{
+  display: inline-block;  /* Places items side by side */
+  margin: 0 8px;
+}
+
+/* Styles the navigation links */
+.navbar a 
+{
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 20px;    /* Rounded shape */
+  text-decoration: none;  /* Removes underline */
+  font-weight: bold;
+  color: #F2F4EF;
+  border: 1px solid #3E6B4E;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Hover effect on nav links */
+.navbar a:hover 
+{
+  color: #B7C7A7;
+  border-color: #88B07B;
+}
+
+/* Adds space around main content */
+main 
+{
+  padding: 30px 0 40px;
+}
+
+/* Homepage banner image styling */
+.banner-image 
+{
+  width: 100%;               /* Makes image responsive */
+  border-radius: 16px;       /* Rounded corners */
+  border: 2px solid #88B07B; /* Green border */
+  box-shadow: 0 0 20px rgba(42, 211, 142, 0.25); /* Soft glow */
+  margin: 20px 0;
+}
+
+/* Panel sections (content boxes) */
+.panel 
+{
+  background-color: rgba(255, 255, 255, 0.06); /* Slight transparency */
+  border: 1px solid #3E6B4E;
+  border-radius: 14px;
+  padding: 20px;     /* Space inside panel */
+  margin: 20px 0;    /* Space between panels */
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Centers section headings */
+.panel h2 
+{
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Paragraph styling inside panels */
+.panel p 
+{
+  color: #D4DDCF;
+}
+
+/* Styles lists on menu */
+.menu-list 
+{
+  margin: 10px auto 0;
+  max-width: 700px;
+  color: #D4DDCF;
+}
+
+/* Adds space between list items */
+.menu-list li 
+{
+  padding: 6px 0;
+}
+
+/* Flex container for featured items */
+.featured-row 
+{
+  display: flex;           /* Enables flexbox */
+  gap: 20px;               /* Space between cards */
+  flex-wrap: wrap;         /* Allows stacking on smaller screens */
+  justify-content: center; /* Centers cards horizontally */
+  margin-top: 18px;
+}
+
+/* Featured card styling */
+.featured-item 
+{
+  flex: 1;                /* Allows flexible sizing */
+  min-width: 260px;       /* Minimum width */
+  max-width: 380px;       /* Prevents oversized cards */
+  background-color: #0B1A13;
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid #3E6B4E;
+  text-align: center;     /* Centers text inside cards */
+}
+
+/* Featured label badge */
+.badge 
+{
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid #88B07B;
+  background-color: rgba(136, 176, 123, 0.15);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Featured images */
+.featured-item img
+ {
+  width: 100%;
+  max-width: 300px;    /* Keeps image smaller */
+  display: block;
+  margin: 0 auto 10px; /* Centers image */
+  border-radius: 12px;
+  border: 1px solid #88B07B;
+}
+
+/* Footer styling */
+footer 
+{
+  background-color: #0B1A13;
+  border-top: 1px solid #3E6B4E;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #D4DDCF;
+}
+
+/* Makes featured items stack on smaller screens */
+@media (max-width: 600px)
+ {
+  .featured-row
+   {
+    flex-direction: column;
+    align-items: center;
+  }
+}
